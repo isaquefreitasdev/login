@@ -1,7 +1,7 @@
 const email = document.querySelector("#email")
 const password = document.querySelector("#password")
 const btn = document.querySelector("#btn")
-
+const input = document.querySelectorAll("input")
 
 function emailFocus(){
     const emailValue = email.value;
@@ -23,3 +23,17 @@ function passwordFocus(){
 
 email.addEventListener("blur",emailFocus)
 password.addEventListener("blur",passwordFocus)
+
+input.forEach(inputs =>{
+    inputs.addEventListener("blur",function () {
+        const allFilled = Array.from(input).every(inputs => inputs.value);
+    
+        if (allFilled) {
+            btn.disabled = false;
+            btn.classList.add("active");
+        } else {
+            btn.disabled = true;
+            btn.classList.remove("active");
+        }
+    })
+})
