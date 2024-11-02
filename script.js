@@ -13,7 +13,7 @@ function emailFocus(){
 }
 function passwordFocus(){
     const passwordValue = password.value;
-    if(!passwordValue){
+    if(!passwordValue || passwordValue.length < 6){
         password.classList.add("error")
     }else{
         password.classList.remove("error")
