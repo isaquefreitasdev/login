@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+img {
+    width: 50px;
+    margin-left: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+body {
+    background-color: blue;
+    color: white
+}
+
+.box {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 1rem;
+    background-color: ;
+}
+
+.box-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+header {
+    margin-bottom: 2rem;
+}
+
+#email,
+#password {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    padding: 0.4rem 4rem;
+}
+
+input::placeholder {
+    font-size: 1.6rem;
+    color: #ffffffab;
+
+}
+
+input {
+    color: #fff;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+
+.section_error {
+    position: relative;
+    text-align: center;
+}
+
+#error {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: red;
+}
+
+#btn {
+    padding: 1rem 0.6rem;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.628);
+
+}
+
+.active {
+    background-color: white !important;
+    color: black;
+    transition: 0.5s;
+}
+
+.active:hover {
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+input:focus {
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+}
+.error{
+    background-color: rgba(255, 0, 0, 0.532) !important;
+}
